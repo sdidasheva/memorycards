@@ -1,0 +1,64 @@
+@import '../../components/styles/styles.scss';
+
+
+.cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 50px;
+    color: $secondColor;
+    box-shadow: inset 0 0 0 0 $thirdColor;
+    transition: ease-out 0.3s;
+    user-select: none;
+
+    &:hover {
+        cursor: pointer;
+        color: $thirdColor;
+        transform: scale(1.2);
+    }
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 50px;
+    color: $secondColor;
+    box-shadow: inset 0 0 0 0 $thirdColor;
+    transition: ease-out 0.3s;
+    user-select: none;
+
+    &:hover {
+        cursor: pointer;
+        color: $thirdColor;
+        transform: scale(1.2);
+    }
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+.card-number {
+    margin-top: 35px;
+    font-family: $fontFamily;
+    font-size: 26px;
+
+
+}

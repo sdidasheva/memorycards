@@ -1,0 +1,53 @@
+@import "./styles.scss";
+
+div.header {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 100px;
+    overflow: hidden;
+    background-color: $firstColor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.icon_logo {
+    height: 100px;
+    color: white;
+    background-color: $firstColor;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: $firstColor;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+
+    li {
+        list-style-type: none;
+        background-color: $firstColor;
+        cursor: pointer;
+        font-family: $fontFamily;
+        font-size: 40px;
+        transition: 0.2s ease;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        &:hover {
+            transform: scale(1.2);
+            font-weight: bolder;
+        }
+    }
+}
+
+.menu {
+    text-decoration: none;
+    color: white;
+}

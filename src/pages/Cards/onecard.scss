@@ -1,0 +1,80 @@
+@import '../../components/styles/styles.scss';
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    border: 5px solid $secondColor;
+    border-radius: 10%;
+    width: 500px;
+    height: 300px;
+}
+
+.english {
+    font-family: $fontFamily;
+    font-size: 80px;
+    font-weight: bolder;
+    margin-top: 50px;
+    color: $fontColor;
+}
+
+.transcription {
+    font-family: $fontFamily;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: $fontColor;
+}
+
+
+
+@keyframes sheen {
+    0% {
+        transform: skewY(-45deg) translateX(0);
+    }
+
+    100% {
+        transform: skewY(-45deg) translateX(12.5em);
+    }
+}
+
+.flip {
+    display: flex;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    border: 2px solid $secondColor;
+    background-color: $secondColor;
+    color: white;
+    font-size: 24px;
+    border-radius: 0.3em;
+    cursor: pointer;
+    width: 230px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 225px;
+    margin-top: 35px;
+
+    &:hover {
+        background-color: $secondColor;
+        color: #fff;
+        border-bottom: 4px solid darken($secondColor, 10%);
+
+        &:before {
+            transform: skewX(-45deg) translateX(13.5em);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+
+}
+
+.russian {
+    color: $fontColor;
+    border: none;
+    font-weight: bolder;
+    font-size: 40px;
+
+}

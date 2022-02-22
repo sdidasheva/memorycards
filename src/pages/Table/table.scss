@@ -1,0 +1,101 @@
+@import '../../components/styles/styles.scss';
+
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1px;
+    justify-content: center;
+    margin-top: 0px;
+    outline: transparent;
+    border: transparent;
+    background-color: $backgroundColor;
+}
+
+.table_header>th {
+    background-color: $thirdColor;
+    color: white;
+    font-size: 27px;
+}
+
+table {
+    width: 100%;
+    font-family: $fontFamily;
+    font-size: 25px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+
+table,
+tr {
+    border: 0.1px solid $thirdColor;
+    height: 54px;
+}
+
+table>tbody>tr {
+    background-color: white;
+    color: $fontColor;
+    text-align: center;
+}
+
+table>tbody>tr:nth-child(n):hover {
+    background-color: $thirdColor;
+    color: white;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+}
+
+
+.button {
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.button_save {
+    background-color: green;
+}
+
+.button_cancel {
+    background-color: #f46a5f;
+}
+
+.button_edit {
+    background-color: #ffca18;
+}
+
+.button_delete {
+    background-color: #f46a5f;
+}
+
+.table_add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0;
+
+    >input {
+        width: 25%;
+        border: 2px solid $thirdColor;
+        font-family: $fontFamily;
+        font-size: 20px;
+    }
+}
+
+.button_add {
+    background-color: $thirdColor;
+    align-self: flex-end;
+}
+
+.table_error {
+    height: 35px;
+    font-family: $fontFamily;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
